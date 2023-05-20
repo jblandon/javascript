@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio 9 - Contar consonantes, vocales y longitud de una palabra</title>
+</head>
+<body>
+  <script>
+    let palabra = prompt("Ingrese una palabra");
+
+    let consonantes = 0;
+    let vocales = 0;
+
+    for (let i = 0; i < palabra.length; i++) {
+      let letra = palabra[i].toLowerCase();
+      if (letra.match(/[a-z]/i)) {
+        if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+          vocales++;
+        } else {
+          consonantes++;
+        }
+      }
+    }
+
+    let longitud = palabra.length;
+
+    console.log(`Palabra: ${palabra}`);
+    console.log(`Longitud: ${longitud}`);
+    console.log(`Consonantes: ${consonantes}`);
+    console.log(`Vocales: ${vocales}`);
+  </script>
+</body>
+</html>

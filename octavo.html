@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio 8 - Calcular letra de DNI</title>
+</head>
+<body>
+  <script>
+    const letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+    let dni = prompt("Ingrese un número de DNI");
+
+    if (dni >= 0 && dni <= 99999999) {
+      let posicion = dni % 23;
+      let letra = letras[posicion];
+      console.log(`La letra correspondiente al DNI ${dni} es: ${letra}`);
+    } else {
+      console.log("El número de DNI ingresado es inválido.");
+    }
+  </script>
+</body>
+</html>

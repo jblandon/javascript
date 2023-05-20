@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let figura = prompt("Ingrese la figura para calcular el área (triángulo, rectángulo o círculo)");
+
+        if (figura === "triángulo") {
+        let base = parseFloat(prompt("Ingrese la base del triángulo"));
+        let altura = parseFloat(prompt("Ingrese la altura del triángulo"));
+
+        let area = (base * altura) / 2;
+        console.log(`El área del triángulo es: ${area}`);
+        } else if (figura === "rectángulo") {
+        let base = parseFloat(prompt("Ingrese la base del rectángulo"));
+        let altura = parseFloat(prompt("Ingrese la altura del rectángulo"));
+
+        let area = base * altura;
+        console.log(`El área del rectángulo es: ${area}`);
+        } else if (figura === "círculo") {
+        let radio = parseFloat(prompt("Ingrese el radio del círculo"));
+
+        let area = Math.PI * Math.pow(radio, 2);
+        console.log(`El área del círculo es: ${area}`);
+        } else {
+        console.log("Figura inválida. Por favor, ingrese una figura válida: triángulo, rectángulo o círculo.");
+        }
+
+    </script>
+</body>
+</html>
